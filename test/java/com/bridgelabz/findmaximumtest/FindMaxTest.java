@@ -2,8 +2,6 @@
 package com.bridgelabz.findmaximumtest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import java.util.ArrayList;
-import java.util.List;
 
 public class FindMaxTest
 {
@@ -16,6 +14,7 @@ public class FindMaxTest
     {
         Integer[] intArray = { 10, 2, 3, 4, 5 };
         Integer max = findMax.findMaxValue(intArray);
+        findMax.printMax(max);
         Assertions.assertEquals((Integer) 10, max);
     }
 
@@ -24,6 +23,7 @@ public class FindMaxTest
     {
         Integer[] intArray = { 20, 500, 104};
         Integer max = findMax.findMaxValue(intArray);
+        findMax.printMax(max);
         Assertions.assertEquals((Integer) 500, max);
     }
 
@@ -32,6 +32,7 @@ public class FindMaxTest
     {
         Integer[] intArray = { 10,20,100};
         Integer max = findMax.findMaxValue(intArray);
+        findMax.printMax(max);
         Assertions.assertEquals((Integer) 100,max);
     }
 
@@ -42,6 +43,7 @@ public class FindMaxTest
     {
         Float[] floatArray = { 4.8f, 2.2f, 3.3f, 4.4f };
         Float max1 = findMax.findMaxValue(floatArray);
+        findMax.printMax(max1);
         Assertions.assertEquals((Float) 4.8f, max1);
     }
 
@@ -50,6 +52,7 @@ public class FindMaxTest
     {
         Float[] floatArray = { 1.1f, 8.6f, 3.3f, 4.4f };
         Float max1 = findMax.findMaxValue(floatArray);
+        findMax.printMax(max1);
         Assertions.assertEquals((Float) 8.6f, max1);
     }
 
@@ -58,6 +61,7 @@ public class FindMaxTest
     {
         Float[] floatArray = { 1.1f, 2.2f, 6.3f, 4.4f };
         Float max1 = findMax.findMaxValue(floatArray);
+        findMax.printMax(max1);
         Assertions.assertEquals((Float) 6.3f, max1);
     }
 
@@ -69,6 +73,7 @@ public class FindMaxTest
     {
         String[] stringArray = { "zebra", "vibrate", "don" };
         String max2 = findMax.findMaxValue(stringArray);
+        findMax.printMax(max2);
         Assertions.assertEquals((String) "zebra", max2);
     }
 
@@ -77,6 +82,7 @@ public class FindMaxTest
     {
         String[] stringArray = { "vibrate", "zebra", "don" };
         String max2 = findMax.findMaxValue(stringArray);
+        findMax.printMax(max2);
         Assertions.assertEquals((String) "zebra", max2);
     }
 
@@ -85,6 +91,7 @@ public class FindMaxTest
     {
         String[] stringArray = { "vibrate", "zebra", "zebra" };
         String max2 = findMax.findMaxValue(stringArray);
+        findMax.printMax(max2);
         Assertions.assertEquals((String) "zebra", max2);
     }
 }

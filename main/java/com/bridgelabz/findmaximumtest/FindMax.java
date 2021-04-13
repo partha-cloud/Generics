@@ -1,11 +1,9 @@
 package com.bridgelabz.findmaximumtest;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-public class FindMax {
+public class FindMax
+{
     public static void main(String[] args) {
         System.out.println("***** Welcome to arithmetic number computation ****");
     }
@@ -15,7 +13,6 @@ public class FindMax {
     {
         int size = inputArray.length;
         Arrays.sort(inputArray);
-        printMax(inputArray[size-1]);
         return inputArray[size-1];
     }
 
